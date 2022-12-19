@@ -1,4 +1,4 @@
-package com.company.cpluss.model;
+package com.company.cpluss.model.items;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,10 +14,17 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Data
 @Entity
-public class Item {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
+
+    private String productID;
+    private String productName;
+    private double amount;
+    private String productDescription;
+    private String sellerName;
+
 
 
 }
